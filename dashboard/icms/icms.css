@@ -15,7 +15,7 @@ body {
 .container {
   position: relative;
   width: 1200px; /* Ajuste o tamanho do quadrado conforme necessário */
-  height: 600px;
+  height: 630px;
   background-color: rgba(252, 251, 251, 0.486); /* Cor de fundo com opacidade */
   border-radius: 3%;
 }
@@ -80,5 +80,5 @@ nav a {
 #selectAno,
 #selectMes{
   font-size: 20px;
-  
+
 }

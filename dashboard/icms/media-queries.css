@@ -1,0 +1,40 @@
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: auto;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    margin-left: 0;
+  }
+
+  nav h1 {
+    font-size: 1.5em; /* Ajuste conforme necessário */
+  }
+
+  nav a {
+    font-size: 18px; /* Ajuste conforme necessário */
+  }
+
+  #text_h1 {
+    margin-left: 10px; /* Ajuste conforme necessário */
+  }
+
+  #text_p {
+    margin-left: 10px; /* Ajuste conforme necessário */
+    width: auto;
+  }
+
+  .container_desc {
+    max-width: 100%;
+  }
+
+  #selectAno,
+  #selectMes {
+    font-size: 16px; /* Ajuste conforme necessário */
+  }
+}
