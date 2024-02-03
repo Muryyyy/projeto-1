@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px) {
   body {
-    background-size: auto;
+    background-size: cover;
   }
 
   .container {
@@ -17,7 +17,7 @@
   }
 
   nav a {
-    font-size: 18px; /* Ajuste conforme necessário */
+    font-size: 16px; /* Ajuste conforme necessário */
   }
 
   #text_h1 {
@@ -26,7 +26,6 @@
 
   #text_p {
     margin-left: 10px; /* Ajuste conforme necessário */
-    width: auto;
   }
 
   .container_desc {
@@ -35,6 +34,6 @@
 
   #selectAno,
   #selectMes {
-    font-size: 16px; /* Ajuste conforme necessário */
+    font-size: 14px; /* Ajuste conforme necessário */
   }
 }
