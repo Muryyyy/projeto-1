@@ -3,3 +3,7 @@ document.getElementById('botaoEnviar').addEventListener('click', function() {
 })
   
 
+
+function voltar() {
+  window.history.back();
+}
