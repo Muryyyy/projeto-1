@@ -6,7 +6,9 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Dashboard - ICMS</title>
  <link rel="stylesheet" href="icms.css">
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
  <link rel="stylesheet" type="text/css" href="media-queries.css">
+
 </head>
 
 
@@ -22,20 +24,21 @@
       <img src="item-icms.png" alt="">
     </div>
     <h1>DashBoard - ICMS</h1>
+
+
       <nav>  
         <!-- navegação aqui -->
 
-        
         <ul> 
           <li style="font-size: 30px;"><strong>Selecione</strong>:</li>        
           <li>
-            <label for="selectAno" style="font-size: 25px;">Ano:</label>
-              <select id="selectAno">
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <!-- Adicione mais opções conforme necessário -->
-              </select>
+             <label for="selectAno" style="font-size: 25px;">Ano:</label>
+        <select id="selectAno" onchange="atualizarGrafico()">
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <!-- Adicione mais opções conforme necessário -->
+    </select>
           </li>
 
           <li>
@@ -45,29 +48,32 @@
                 <option value="2">Fevereiro</option>
                 <option value="3">Março</option>
                 <option value="4">Abril</option>
-                <!-- Adicione mais opções conforme necessário -->
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
               </select>
-          </li>
-        </ul>
+          </li>          
+        </ul>      
       </nav>
+  
+    <!--Tag do gráfico-->
+    <canvas id="myChart" width="15" height="4"></canvas>
     
-      <!--Menu onde fica a descrição do ICMS-->
-    <div class="container_desc">
-      
-          <div id="text_h2">
-          <h2>ICMS</h2>
-          </div>
 
-          <div id="text_p">
-          <p style="font-size: 20px;">ICMS É A SIGLA PARA IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS</p>
-          <p style="font-size: 16px;">É um imposto estadual no Brasil que incide sobre a circulação de mercadorias, a prestação de serviços de transporte interestadual e intermunicipal, e a comunicação. O ICMS é um tributo muito relevante na carga tributária brasileira e desempenha um papel importante na arrecadação dos estados.</p>
+      <!--Botão de voltar para o painel-->
+          <div id="id-button">
+          <button onclick="voltar()">Voltar</button>
+          </div>
           
+       <!--Onde fica a descrição do ICMS-->   
+          <div id="id-descric">
+          <p><strong>ICMS É A SIGLA PARA IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS</strong></p>
           </div>
-
-    </div>
-        <div id="id-button">
-          <button><a href="/painel.html">Voltar</a></button>
-        </div>
   </div>
 
   
@@ -79,6 +85,12 @@
 
 
 
+
+
+
+
+
+<script src="icms.js"></script>
 
 
 
